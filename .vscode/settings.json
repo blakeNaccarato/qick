@@ -1,0 +1,19 @@
+{
+  // Terminal
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "terminal.integrated.profiles.windows": {
+    "Vivado 2024.2 Tcl Shell": {
+      "overrideName": true,
+      "path": "cmd",
+      "args": ["/k", "C:/Xilinx/Vivado/2023.1/bin/vivado.bat", "-mode", "tcl"],
+      "icon": "terminal-cmd"
+    }
+  },
+  // HDL-related extension settings: Verilog, VHDL, SystemVerilog, Vivado/TCL
+  "ctags-companion.command": "ctags -R --fields=+nKz --langmap=SystemVerilog:+.v -R rtl /opt/uvm-1.2/src",
+  "verilog.formatting.verilogHDL.formatter": "verible-verilog-format",
+  "verilog.languageServer.rustHdl.enabled": true,
+  "verilog.languageServer.veribleVerilogLs.enabled": true,
+  "verilog.languageServer.veribleVerilogLs.arguments": "--ruleset=none",
+  "verilog.linting.linter": "xvlog"
+}
